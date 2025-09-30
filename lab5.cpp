@@ -67,24 +67,80 @@ int main() {
         }
         break;
 
-        case 5;
+        case 5:
         int f,g,h,i,j,k;
         cout<<"Enter the first number:"<<endl;
         cin>>f;
         cout<<"Enter the second number:"<<endl;
         cin>>g;
         h=f+g;
-        cout<<"The sum of "<<f<<" and "<<g<<" is: "<<h;
+        cout<<"The sum of "<<f<<" and "<<g<<" is: "<<h<<endl;
         i=f-g;
-        cout<<"The sum of "<<f<<" and "<<g<<" is: "<<;
-        i=f*g;
+        cout<<"The difference of "<<f<<" and "<<g<<" is: "<<i<<endl;
+        j=f*g;
+        cout<<"The multiplication of "<<f<<" and "<<g<<" is: "<<j<<endl;
         k=f/g;
+        cout<<"The division of the "<<f<<" and "<<g<<" is: "<<k<<endl;
+        break;
 
+        case 6:
+        float l,m,n;
+        cout<<"Enter the marks in the first subject: "<<endl;
+        cin>>l;
+        cout<<"Enter the marks in the second subject: "<<endl;
+        cin>>m;
+        cout<<"Enter the marks in the third subject: "<<endl;
+        cin>>n;
+        float perc;
+        perc=((l+m+n)/300)*100;
+        if(perc>=60){
+            cout<<"The student is pass."<<endl;
 
+        }
+        else{
+            cout<<"The student is fail"<<endl;
 
-    
-    default:
+        }
+        break;
+
+        case 7:
+        int o,sq,cube;
+        cout<<"Enter the number you want the square and cube of: ";
+        cin>>o;
+        sq=o*o;
+        cube=o*o*o;
+        cout<<"The square of the number is "<<sq<<" while the cube of the number is "<<cube<<endl;
+        break;
+        
+        
+        default:
+        int p,q,z;
+        cout<<"Enter the first number: "<<endl;
+        cin>>p;
+        cout<<"Enter the second number: "<<endl;
+        cin>>q;
+        cout<<"Enter the thrid number: "<<endl;
+        cin>>z;
+        if(p>q){
+            if(p>z){
+                cout<<p<<" is the biggest number."<<endl;
+            }
+            else{
+                cout<<z<<" is the biggest number."<<endl;
+
+            }
+        }
+        else{
+            if(q>z){
+                cout<<q<<" is the biggest number."<<endl;
+
+            }
+            else{
+                cout<<z<<" is the biggest number."<<endl;
+            }
+        }
         break;
     }
+    return 0;
 
 }
