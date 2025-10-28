@@ -6,7 +6,7 @@ int main(){
     while (n>0)
     {
         digit=n%10;
-        sum=sum+digit;
+        sum=sum*10+digit;
         n=n/10;
     }
     cout<<sum;
