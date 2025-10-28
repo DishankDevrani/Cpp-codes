@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x{0};
+    cin>>x;
+    int i{1};
+    int s{0};
+    do
+    {
+        s=s+i;
+        i=i+1;
+    } while (i<=x);
+    cout<<s;
+    
+}
