@@ -15,21 +15,21 @@ int main(){
             cin>>arr2[i][j];
         }
     }
-    cout<<"Array 1 is equal to"<<endl;
+    cout<<"Matrix 1 is equal to"<<endl;
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             cout<<arr1[i][j]<<"   ";
         }
         cout<<endl;
     }
-    cout<<"And array 2 is equal to"<<endl;
+    cout<<"And matrix 2 is equal to"<<endl;
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             cout<<arr2[i][j]<<"   ";
         }
         cout<<endl;
     }
-    cout<<endl<<"The multiplication of the two arrays is "<<endl;
+    cout<<endl<<"The multiplication of the two matrices is "<<endl;
     
 
     for(i=0;i<3;i++){
