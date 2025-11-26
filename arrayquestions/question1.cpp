@@ -13,4 +13,5 @@ int main(){
     for(i=0;i<a;i++){
         cout<<arr[i]<<" ";
     }
+    
 }
