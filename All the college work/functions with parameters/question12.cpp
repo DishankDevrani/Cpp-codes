@@ -13,7 +13,7 @@ int biggest(int a[],int x){
 }
 int main(){
     int x;
-    cout<<"Enter size of the array: "<<x<<endl;
+    cout<<"Enter size of the array: "<<endl;
     cin>>x;
     int a[x];
     for(int i=0;i<x;i++){
@@ -21,5 +21,5 @@ int main(){
     }
     int d;
     d=biggest(a,x);
-    cout<<d;
+    cout<<"The biggest number of the array is: "<<d;
 }
