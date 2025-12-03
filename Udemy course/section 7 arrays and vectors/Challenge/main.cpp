@@ -30,12 +30,13 @@
 */
     
 #include <iostream>
+using namespace std;
 
 int main() {
     
     // your solution goes here
 
-    cout << endl;
+    cout<<endl;
     return 0;
 }
 
