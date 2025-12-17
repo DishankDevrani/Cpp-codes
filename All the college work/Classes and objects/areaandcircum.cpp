@@ -18,7 +18,7 @@ class circle{
 };
 int main()
 {
-    circle s;
+
     int r;
     cin>>r;
     float x,y;
