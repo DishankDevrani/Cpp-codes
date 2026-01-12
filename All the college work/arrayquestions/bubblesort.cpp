@@ -2,25 +2,25 @@
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the size for the array: "<<endl;
+    cout<<"Enter the number of elements in the array: "<<endl;
     cin>>n;
-    int a[n],i,j;
+    int a[n];
     cout<<"Enter the elements for the array: "<<endl;
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    for(i=0;i<n;i++){
-        for(j=0;j<n-i-1;j++){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i-1;j++){
             if(a[j]>a[j+1]){
                 int t{0};
                 t=a[j];
                 a[j]=a[j+1];
-                a[j+1]=t;  
+                a[j+1]=t;
             }
         }
     }
-    cout<<"The elements of the sorted array are: "<<endl;
-    for(i=0;i<n;i++){
+    cout<<"The final sorted array is: ";
+    for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
 }
