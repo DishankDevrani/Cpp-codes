@@ -1,3 +1,5 @@
+//only works on sorted arrays
+
 #include <iostream>
 using namespace std;
 void search(int a[],int item,int beg,int end){
