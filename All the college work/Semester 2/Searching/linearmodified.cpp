@@ -4,6 +4,8 @@ int main(){
     int n;
     cout<<"Enter the size of the array: "<<endl;
     cin>>n;
+
+    if(n>0){
     int a[n];
     cout<<"Enter the elements for the array: "<<endl;
     for(int i=0;i<n;i++){
@@ -25,6 +27,10 @@ int main(){
     else{
         cout<<"Item found a total of "<<c<<" times."<<endl;
     }
-    
-    
 }
+else{
+    cout<<"Array not given."<<endl;
+}
+    
+    
+} 
