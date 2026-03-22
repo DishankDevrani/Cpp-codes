@@ -23,6 +23,7 @@ int main(){
             c++;
             break;
         }
+        
     }
     if(c==0){
         cout<<"Item not found!!"<<endl;
