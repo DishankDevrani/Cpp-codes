@@ -39,9 +39,9 @@ int main(){
 
         
         for(int j=n-1;j>=0;j--){
-            int digit = (a[j]/pos)%10;
-            b[c[digit]-1] = a[j];
-            c[digit]--;
+            
+            b[c[(a[j]/pos)%10]-1] = a[j];
+            c[ (a[j]/pos)%10]--;
         }
 
         for(int i=0;i<n;i++){
