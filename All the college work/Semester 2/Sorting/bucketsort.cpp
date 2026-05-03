@@ -1,59 +1,42 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>  // for sort()
 using namespace std;
 
-void insertionSort(int b[], int counter) {
-    for (int i = 1; i < counter; i++) {
-        int key = b[i];
-        int j = i - 1;
+void bucketSort(float arr[], int n) {
+    // 1. Create n empty buckets
+    vector<float> buckets[n];
 
-        while (j >= 0 && b[j] > key) {
-            b[j + 1] = b[j];
-            j--;
-        }
-        b[j + 1] = key;
-    }
-}
-
-int main(){
-    int n;
-    cout<<"Enter size of the array: "<<endl;
-    cin>>n;
-    int a[n];
-    cout<<"Enter the elements for the array: "<<endl;
-    for(int i=0;i<n;i++){
-        cin>>a[i];
-    }
-    int max=a[0];
-    for(int i=0;i<n;i++){
-        if(max<a[i]){
-            max=a[i];
-        }
-    }
-    int counter[n]={0};
-    int b[n][n]={0};
-    for(int i=0;i<n;i++){
-        int index;
-        index=(n*a[i])/(max+1);
-        b[index][counter[index]]=a[i];
-        counter[index]++;
-    }
-    cout<<endl;
-
-    for(int i=0;i<n;i++){
-        insertionSort(b[i],counter[i]);
+    // 2. Put elements into different buckets
+    for (int i = 0; i < n; i++) {
+        int index = n * arr[i];  // find bucket index
+        buckets[index].push_back(arr[i]);
     }
 
+    // 3. Sort each bucket
+    for (int i = 0; i < n; i++) {
+        sort(buckets[i].begin(), buckets[i].end());
+    }
+
+    // 4. Combine all buckets into original array
     int k = 0;
-    for(int i = 0; i < n; i++) {
-    for(int j = 0; j < counter[i]; j++) {
-        a[k] = b[i][j];
-        k++;
+    for (int i = 0; i < n; i++) {
+        for (float value : buckets[i]) {
+            arr[k++] = value;
+        }
     }
 }
-cout<<"Sorted array:\n";
-for(int i=0;i<n;i++){
-    cout<<a[i]<<" ";
-}
-    
-    
+
+int main() {
+    float arr[] = {0.42, 0.32, 0.23, 0.52, 0.25};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    bucketSort(arr, n);
+
+    cout << "Sorted array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
 }
