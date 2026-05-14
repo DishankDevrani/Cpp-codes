@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+//WAP to take two sets s1 and s2 and get the common elements of both into s3.
 
 int main(){
     set<int>s1;
