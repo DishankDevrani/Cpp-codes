@@ -217,10 +217,10 @@ Node* deleteafterindex(Node* head, int index){
 
 int main(){
     Node *head = nullptr;
+    head= new Node(100);
+    
 
-    head = insertatbeginning(head, 10);
-    head = insertatend(head, 20);
-    head = insertaftervalue(head, 10, 50);
+    
 
     display(head);
 
