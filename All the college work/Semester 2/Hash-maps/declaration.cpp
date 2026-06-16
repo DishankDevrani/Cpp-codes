@@ -9,10 +9,12 @@ int main(){
     for(int i:a){
         M[i]=M[i]+1;
     }
+
     for(auto elem:M){
         if(elem.second==1){
             cout<<elem.first<<" ";
         }
         
     }
+    
 }

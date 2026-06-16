@@ -24,4 +24,7 @@ int main(){
     cout<<endl;
 
     cout<<s1.count(10);
+    
+    
+    
 }
