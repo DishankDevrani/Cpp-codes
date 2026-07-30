@@ -53,6 +53,9 @@ string infixToPostfix(string s){
 }
 
 int main(){
+
+    cout<<"Dishank Devrani"<<endl<<"Roll no: 2503201000473"<<endl;
+
     string s;
     cout << "Enter infix expression: ";
     cin >> s;
@@ -61,3 +64,4 @@ int main(){
 
     return 0;
 }
+
