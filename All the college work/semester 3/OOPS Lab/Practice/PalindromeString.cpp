@@ -24,10 +24,10 @@ int main(){
     reverse(rev_s.begin(),rev_s.end());
 
     if(isPalindrome(s,rev_s)){
-        cout<<"The string is palindrome: "<<endl;
+        cout<<"The string is palindrome. "<<endl;
     }
     else{
-        cout<<"The string is not palindrome: "<<endl;
+        cout<<"The string is not palindrome. "<<endl;
     }
 
 }

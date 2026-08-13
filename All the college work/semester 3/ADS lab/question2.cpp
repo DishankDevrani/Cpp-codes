@@ -1,4 +1,4 @@
-//Stack Push
+//Stack Push and Pop.
 
 
 #include <bits/stdc++.h>
