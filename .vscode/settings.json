@@ -1,3 +1,30 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"
+  "files.autoSave": "afterDelay",
+  "debug.onTaskErrors": "debugAnyway",
+  "code-runner.runInTerminal": true,
+
+  "code-runner.executorMap": {
+    "cpp": "cd $dir; g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -lraylib -lopengl32 -lgdi32 -lwinmm; if ($?) { & \".\\$fileNameWithoutExt.exe\" }"
+  },
+
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.enabled": false,
+  "git.suggestSmartCommit": false,
+  "workbench.colorTheme": "Dark+",
+  "git.openRepositoryInParentFolders": "never",
+
+  "ridiculousCoding.explosions": false,
+  "ridiculousCoding.shake": false,
+  "ridiculousCoding.chars": false,
+  "ridiculousCoding.sound": false,
+  "ridiculousCoding.blips": false,
+  "ridiculousCoding.fireworks": false,
+  "ridiculousCoding.reducedEffects": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDragAndDrop": false
 }
