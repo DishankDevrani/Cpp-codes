@@ -51,7 +51,7 @@ int main() {
     string name;
     cout<<"Enter the name of the patient: "<<endl;
     getline(cin,name);
-    cin.ignore();
+    
 
     int id;
     cout<<"Enter patient ID: "<<endl;
